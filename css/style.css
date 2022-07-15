@@ -10,7 +10,7 @@ html,body{
     font-size: 16px;
     background-color: #f1f1f1;
     font-family: 'Montserrat', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 .image{
@@ -163,7 +163,7 @@ html,body{
     width: 50%;
     background-color: red;
     text-align: right;
-    padding: 15px;
+    padding: 20px;
 }
 .join-box .left h1{
     font-size: 1.8rem;
@@ -176,7 +176,13 @@ html,body{
     color: #f1f1f1;
     font-weight: 300;
     line-height: 22px;
+    margin-bottom: 25px;
     padding: 1rem 0;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
 
 }
 
@@ -184,7 +190,7 @@ html,body{
     width: 50%; 
     background-color: #000;
     text-align: left;
-    padding: 15px;
+    padding: 20px;
 
 }
 .join-box .right h1{
@@ -197,8 +203,13 @@ html,body{
     color: #f1f1f1;
     font-weight: 300;
     line-height: 22px;
+    margin-bottom: 25px;
     padding: 1rem 0;
-    
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
 }
 /*=====EXPRIENCE-SECTION==========*/
 
@@ -233,7 +244,7 @@ html,body{
     font-size: 0.8rem;
     font-weight: 300;
     color: slategray;
-
+    
 }
 
 .improve .fa{
@@ -280,7 +291,6 @@ html,body{
     color: #f1f1f1;
     background-color: #000;
     justify-content: space-between;
-    padding: 10px;
 }
 .activities .bg-color{
     background-color: red;
@@ -309,6 +319,11 @@ html,body{
     font-weight: 300;
     line-height: 22px;
     padding-bottom: 20px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
 }
 /*========SERVICE=========*/
 .service{
@@ -488,6 +503,11 @@ html,body{
     font-weight: 300;
     font-size: 0.9rem;
     line-height: 20px;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
 }
 .index h1{
     font-size: 2.2rem;
@@ -535,6 +555,7 @@ html,body{
     padding: 10px 0;
     font-size: 1.2rem;
     font-weight: 500;
+    cursor: pointer;
 }
 /*==========OUR TRAINERS=========*/
 .team-mates{
@@ -629,7 +650,11 @@ html,body{
 }
 .person .review p{
     font-size: 0.9rem;
-
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
 }
 
 .clients .client-word{
@@ -656,6 +681,11 @@ html,body{
 .client-word p{
     font-size: 1rem;
     line-height: 20px;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
 }
 /*================BLOG-SECTION===============*/
 .blog-section{
@@ -686,6 +716,12 @@ html,body{
     font-weight: 300;
     line-height: 22px;
     padding: 20px 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
 }
 .left-content .button{
     border: 1px solid red;
@@ -701,7 +737,7 @@ html,body{
     background-image: url("../image/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    
+    padding: 30px 0;
 
 }
 
@@ -712,11 +748,10 @@ html,body{
     padding: 5px 0;
     text-align: center;
     color: #dbdbdb;
+    transition: all 0.4s ease;
 }
 .contact-section a:hover{
-    font-size: 1.2rem;
-    color: lightcoral;
-    border: 1px solid yellow;
+    color: #a1b6b6;
     
 }
 .contact-section .social-media{
@@ -727,19 +762,17 @@ html,body{
     border: 1px solid #f1f1f1;
     padding: 7px 9px; 
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 3px;
     font-size: 1rem;
     transition: 0.3s all ease;
 
 }
 .contact-section .social-media .fa:hover{
-    font-size: 2rem;
     color: gold;
     border: 1px solid blueviolet;
 }
 .contact-section .fbox{
     width: 25%;
-    padding: 50px 20px;
     color: #dbdbdb;
     text-align: center;
 }
@@ -797,7 +830,7 @@ html,body{
     }
 /*=========ACTIVITIES========*/
     .activities .work-out{
-        padding: 50px 20px;
+        padding: 20px;
     }
     .work-out .text p{
         padding: 20px 0;
@@ -941,6 +974,14 @@ html,body{
 .image{
     margin: 0 auto;
 }
+.work-out .text h1{
+    font-size: 1.2rem;
+
+}
+.activities .work-out{
+    width: 100%;
+    padding: 15px 0;
+}
 /*============================*/
 .left-width .index{
     width: 100%;
@@ -1002,9 +1043,6 @@ html,body{
         font-size: 1.5rem;
     }
 /*=============ABOUT===========*/
-.activities .work-out{
-    width: 100%;
-}
 .work-out .fa{
     font-size: 5rem;
 }
@@ -1082,6 +1120,10 @@ html,body{
 /*========SEDULE=======*/
 .index h1{
     font-size: 1.5rem;
+}
+.bmi h1{
+    font-size: 1.5rem;
+
 }
 /*=========SERVICE=======*/
 .service{
